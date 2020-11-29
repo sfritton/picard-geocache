@@ -1,0 +1,29 @@
+:root {
+  --color-neutral: #000;
+  --color-orange-primary: #ff9900;
+  --color-orange-dark: #cc6666;
+  --color-orange-light: #ff9966;
+  --color-orange-lighter: #ffcc99;
+  --color-orange-lightest: #f8fbdb;
+  --color-blue-primary: #9999ff;
+  --color-blue-light: #cc99cc;
+
+  --text-default: 16px;
+  --text-sm: 14px;
+  --text-title: 40px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+body {
+  background: var(--color-neutral);
+  color: var(--color-orange-primary);
+  font-family: Oswald;
+  font-size: var(--text-default);
+}
+
+h1 {
+  font-size: var(--text-title);
+  font-weight: bold;
+  text-transform: uppercase;
+}
