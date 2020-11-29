@@ -7,5 +7,5 @@
 module.exports = {
   /* Your site config here */
   plugins: [],
-  pathPrefix: "/picard-geocache",
-}
+  pathPrefix: '/picard-geocache',
+};
