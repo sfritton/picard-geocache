@@ -8,9 +8,19 @@
   --color-blue-primary: #9999ff;
   --color-blue-light: #cc99cc;
 
-  --text-default: 16px;
   --text-sm: 14px;
-  --text-title: 40px;
+  --text-md: 16px;
+  --text-lg: 20px;
+  --text-xl: 30px;
+  --text-title: 60px;
+
+  --space-xs: 4px;
+  --space-sm: calc(var(--space-xs) * 2);
+  --space-md: calc(var(--space-sm) * 2);
+  --space-lg: calc(var(--space-md) * 2);
+  --space-xl: calc(var(--space-lg) * 2);
+
+  --nav-width: 200px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
@@ -19,11 +29,55 @@ body {
   background: var(--color-neutral);
   color: var(--color-orange-primary);
   font-family: Oswald;
-  font-size: var(--text-default);
+  font-size: var(--text-md);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--color-orange-lighter);
 }
 
 h1 {
   font-size: var(--text-title);
-  font-weight: bold;
-  text-transform: uppercase;
+  color: var(--color-orange-primary);
+}
+
+h2 {
+  margin-top: var(--space-lg);
+  font-size: var(--text-xl);
+}
+
+h3 {
+  margin-top: var(--space-lg);
+  font-size: var(--text-lg);
+}
+
+h4 {
+  margin-top: var(--space-md);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+*:focus {
+  outline: none;
 }

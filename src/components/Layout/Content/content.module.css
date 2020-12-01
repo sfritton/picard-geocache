@@ -1,0 +1,51 @@
+.contentBorder {
+  position: relative;
+  background: var(--color-orange-dark);
+  border-top-left-radius: calc(var(--nav-width) / 2);
+  padding-left: var(--nav-width);
+  padding-top: var(--space-lg);
+  grid-area: content;
+}
+
+.content {
+  background: var(--color-neutral);
+  border-top-left-radius: var(--space-xl);
+  padding-left: var(--space-xl);
+  padding-top: var(--space-lg);
+}
+
+.borderBlock {
+  position: absolute;
+  top: 0;
+  border-left-style: solid;
+  border-left-color: var(--color-neutral);
+  border-left-width: var(--space-md);
+  height: var(--space-lg);
+}
+
+.borderBlock1 {
+  width: var(--space-xl);
+  background: var(--color-orange-primary);
+  right: 0;
+}
+
+.borderBlock2 {
+  width: 30%;
+  background: var(--color-blue-light);
+  right: var(--space-xl);
+}
+
+.borderBlock3 {
+  width: 20%;
+  background: var(--color-orange-light);
+  border-bottom-width: var(--space-md);
+  border-bottom-color: var(--color-neutral);
+  border-bottom-style: solid;
+  right: calc(30% + var(--space-xl));
+}
+
+.borderBlock4 {
+  width: var(--space-xl);
+  background: var(--color-orange-light);
+  right: calc(50% + var(--space-xl));
+}
