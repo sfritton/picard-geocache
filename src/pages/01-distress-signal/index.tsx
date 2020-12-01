@@ -4,6 +4,7 @@ import Layout from '../../components/Layout';
 import DistressSignalEntry from '../../log-entries/01-distress-signal';
 import UniversalTranslator from '../../components/UniversalTranslator';
 import SubspaceComms from '../../components/SubspaceComms';
+import PersonalLibrary from '../../components/PersonalLibrary';
 
 const Home: React.FC<PageProps> = () => {
   return (
@@ -15,9 +16,7 @@ const Home: React.FC<PageProps> = () => {
           <DistressSignalEntry />
         </Layout.ToolContainer>
         <UniversalTranslator />
-        <Layout.ToolContainer tool="library">
-          <h2>Personal Library</h2>Some stuff about Star Trek
-        </Layout.ToolContainer>
+        <PersonalLibrary />
         <SubspaceComms />
       </Layout.Content>
     </Layout.Grid>

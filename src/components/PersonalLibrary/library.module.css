@@ -1,0 +1,16 @@
+.continueReading {
+  /* font-weight: normal; */
+  font-style: italic;
+}
+
+.lines {
+  margin-left: var(--space-lg);
+}
+
+.lineNumber {
+  font-size: var(--text-sm);
+  color: var(--color-orange-dark);
+  margin-left: calc(var(--space-lg) * -1);
+  display: inline-block;
+  width: var(--space-lg);
+}
