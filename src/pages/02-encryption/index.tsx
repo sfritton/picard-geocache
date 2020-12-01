@@ -7,7 +7,7 @@ import EncryptionEntry from '../../log-entries/02-encryption';
 import SubspaceComms from '../../components/SubspaceComms';
 import PersonalLibrary from '../../components/PersonalLibrary';
 
-const Home: React.FC<PageProps> = () => {
+const Encryption: React.FC<PageProps> = () => {
   return (
     <Layout.Grid>
       <Layout.Header title="USS Enterprise 1701-D" stardate="46257.4" />
@@ -25,4 +25,4 @@ const Home: React.FC<PageProps> = () => {
   );
 };
 
-export default Home;
+export default Encryption;

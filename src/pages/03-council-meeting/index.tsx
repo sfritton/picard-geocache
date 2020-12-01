@@ -2,18 +2,22 @@ import React from 'react';
 import { PageProps } from 'gatsby';
 import Layout from '../../components/Layout';
 import DistressSignalEntry from '../../log-entries/01-distress-signal';
+import EncryptionEntry from '../../log-entries/02-encryption';
 import UniversalTranslator from '../../components/UniversalTranslator';
 import SubspaceComms from '../../components/SubspaceComms';
 import PersonalLibrary from '../../components/PersonalLibrary';
+import CouncilMeetingEntry from '../../log-entries/03-council-meeting';
 
-const DistressSignal: React.FC<PageProps> = () => {
+const CouncilMeeting: React.FC<PageProps> = () => {
   return (
     <Layout.Grid>
-      <Layout.Header title="USS Enterprise 1701-D" stardate="46257.6" />
+      <Layout.Header title="USS Enterprise 1701-D" stardate="46258.2" />
       <Layout.Content>
         <Layout.ToolContainer tool="log">
           <h2>Captain's Log</h2>
           <DistressSignalEntry />
+          <EncryptionEntry />
+          <CouncilMeetingEntry />
         </Layout.ToolContainer>
         <UniversalTranslator />
         <PersonalLibrary />
@@ -23,4 +27,4 @@ const DistressSignal: React.FC<PageProps> = () => {
   );
 };
 
-export default DistressSignal;
+export default CouncilMeeting;
