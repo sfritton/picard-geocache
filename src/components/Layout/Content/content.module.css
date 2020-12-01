@@ -36,7 +36,7 @@
 
 .borderBlock3 {
   width: 20%;
-  background: var(--color-orange-light);
+  background: var(--color-orange-lighter);
   border-bottom-width: var(--space-md);
   border-bottom-color: var(--color-neutral);
   border-bottom-style: solid;
@@ -45,6 +45,6 @@
 
 .borderBlock4 {
   width: var(--space-xl);
-  background: var(--color-orange-light);
+  background: var(--color-orange-lighter);
   right: calc(50% + var(--space-xl));
 }

@@ -1,23 +1,25 @@
 .button[data-color='orange'] {
   --button-color: var(--color-orange-primary);
   --button-hover-color: var(--color-orange-lighter);
-  --button-focus-color: var(--color-orange-dark);
+  --button-active-color: var(--color-orange-dark);
 }
 
 .button[data-color='orange-light'] {
   --button-color: var(--color-orange-light);
   --button-hover-color: var(--color-orange-lighter);
-  --button-focus-color: var(--color-orange-dark);
+  --button-active-color: var(--color-orange-dark);
 }
 
 .button[data-color='blue'] {
   --button-color: var(--color-blue-primary);
   --button-hover-color: var(--color-blue-light);
-  --button-focus-color: var(--color-blue-light);
+  --button-active-color: #7878b3;
 }
 
 .button {
   position: relative;
+  min-width: 200px;
+  text-align: right;
   margin: var(--space-sm);
   background: var(--button-color);
   color: var(--color-neutral);
@@ -30,21 +32,19 @@
   cursor: pointer;
 }
 
+.button[data-is-round='true'] {
+  border-radius: var(--space-lg);
+  padding-right: var(--space-lg);
+}
+
 .button:hover {
   background: var(--button-hover-color);
 }
 
 .button:active {
-  background: var(--button-focus-color);
+  background: var(--button-active-color);
 }
 
-.button:focus:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: var(--space-md);
-  background: var(--button-focus-color);
-  border-right: 4px solid var(--color-neutral);
+.button:focus {
+  text-decoration: underline;
 }
