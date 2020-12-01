@@ -2,6 +2,7 @@ import React from 'react';
 import { PageProps } from 'gatsby';
 import Layout from '../../components/Layout';
 import DistressSignalEntry from '../../log-entries/01-distress-signal';
+import UniversalTranslator from '../../components/UniversalTranslator';
 
 const Home: React.FC<PageProps> = () => {
   return (
@@ -12,9 +13,7 @@ const Home: React.FC<PageProps> = () => {
           <h2>Captain's Log</h2>
           <DistressSignalEntry />
         </Layout.ToolContainer>
-        <Layout.ToolContainer tool="translator">
-          <h2>Universal Translator</h2>Some stuff about Star Trek
-        </Layout.ToolContainer>
+        <UniversalTranslator />
         <Layout.ToolContainer tool="library">
           <h2>Personal Library</h2>Some stuff about Star Trek
         </Layout.ToolContainer>

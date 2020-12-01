@@ -1,0 +1,33 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  grid-auto-flow: column;
+  grid-gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.textarea {
+  background: #222;
+  display: block;
+  border: none;
+  color: var(--color-orange-lighter);
+  font-family: Oswald;
+  font-size: var(--text-md);
+  padding: var(--space-md);
+  min-height: 204px;
+  width: 100%;
+  resize: none;
+}
+
+.button {
+  margin: 0;
+}
+
+.languageHeading {
+  margin-top: 0;
+}
+
+.translationHeading {
+  margin-top: var(--space-sm);
+}

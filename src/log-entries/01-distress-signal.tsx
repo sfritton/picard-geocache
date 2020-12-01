@@ -1,5 +1,6 @@
 import React from 'react';
 import LogEntry from '../components/LogEntry';
+import { DISTRESS_SIGNAL_KLINGON } from '../constants';
 
 const DistressSignalEntry: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const DistressSignalEntry: React.FC = () => {
       Universal Translator.
       <h4>Distress Signal</h4>
       <code style={{ color: 'var(--color-blue-primary)' }}>
-        malja' bopab QaptaHvIS yInchugh je. yulqa' chemvaH vIsIqnISmoH! (encrypted stuff here)
+        {DISTRESS_SIGNAL_KLINGON} (encrypted stuff here)
       </code>
     </LogEntry>
   );
