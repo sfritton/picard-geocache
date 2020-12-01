@@ -1,6 +1,7 @@
 import React from 'react';
 import { PageProps } from 'gatsby';
-import Layout from '../components/Layout';
+import Layout from '../../components/Layout';
+import DistressSignalEntry from '../../log-entries/01-distress-signal';
 
 const Home: React.FC<PageProps> = () => {
   return (
@@ -8,7 +9,8 @@ const Home: React.FC<PageProps> = () => {
       <Layout.Header title="LCARS Access 411" stardate="46257.3" />
       <Layout.Content>
         <Layout.ToolContainer tool="log">
-          <h2>Captain's Log</h2>Some stuff about Star Trek
+          <h2>Captain's Log</h2>
+          <DistressSignalEntry />
         </Layout.ToolContainer>
         <Layout.ToolContainer tool="translator">
           <h2>Universal Translator</h2>Some stuff about Star Trek
