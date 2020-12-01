@@ -15,6 +15,9 @@
   --text-xl: 30px;
   --text-title: 60px;
 
+  --font-text: Arial, sans-serif;
+  --font-title: Oswald, Arial, sans-serif;
+
   --space-xs: 4px;
   --space-sm: calc(var(--space-xs) * 2);
   --space-md: calc(var(--space-sm) * 2);
@@ -29,15 +32,17 @@
 body {
   background: var(--color-neutral);
   color: var(--color-orange-primary);
-  font-family: Oswald;
+  font-family: var(--font-text);
   font-size: var(--text-md);
   margin: 0;
+  line-height: 1.42;
 }
 
 h1,
 h2,
 h3,
 h4 {
+  font-family: var(--font-title);
   margin: 0;
   font-weight: bold;
   text-transform: uppercase;

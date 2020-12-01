@@ -12,7 +12,6 @@
   display: block;
   border: none;
   color: var(--color-orange-lighter);
-  font-family: Oswald;
   font-size: var(--text-md);
   padding: var(--space-md);
   min-height: 204px;
