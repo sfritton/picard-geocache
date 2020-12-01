@@ -17,7 +17,7 @@
 }
 
 .button {
-  position: relative;
+  text-decoration: none;
   min-width: 200px;
   text-align: right;
   margin: var(--space-sm);
