@@ -66,3 +66,10 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+
+.hint > span {
+  display: inline-block;
+  width: var(--space-lg);
+  margin-right: var(--space-xs);
+  margin-bottom: var(--space-xs);
+}

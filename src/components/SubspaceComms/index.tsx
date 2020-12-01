@@ -72,8 +72,9 @@ const SubspaceComms: React.FC = () => {
               <h3>Access Code Hint</h3>
               <ul>
                 {ACCESS_CODE_HINT.map(([row, col], index) => (
-                  <li key={index}>
-                    {row} {col}
+                  <li key={index} className={styles.hint}>
+                    <span>{row}</span>
+                    <span>{col}</span>
                   </li>
                 ))}
               </ul>
