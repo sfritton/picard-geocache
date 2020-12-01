@@ -10,7 +10,7 @@ const DistressSignalEntry: React.FC = () => {
       ships at the beacon's source. We will know more after we have fed the signal into the
       Universal Translator.
       <h4>Distress Signal</h4>
-      <code style={{ color: 'var(--color-blue-primary)' }}>
+      <code style={{ color: 'var(--color-orange-dark)' }}>
         {DISTRESS_SIGNAL_KLINGON} (encrypted stuff here)
       </code>
     </LogEntry>

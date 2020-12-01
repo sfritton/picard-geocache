@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link as GatsbyLink } from 'gatsby';
 import styles from '../Button/button.module.css';
 
 interface Props {
@@ -16,14 +17,14 @@ const Link: React.FC<Props> = ({
   href,
 }) => {
   return (
-    <a
+    <GatsbyLink
       data-color={color}
       data-is-round={isRound}
       className={`${styles.button} ${className}`}
-      href={href}
+      to={href}
     >
       {children}
-    </a>
+    </GatsbyLink>
   );
 };
 
