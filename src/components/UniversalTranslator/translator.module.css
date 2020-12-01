@@ -8,7 +8,7 @@
 }
 
 .textarea {
-  background: #222;
+  background: var(--color-neutral-light);
   display: block;
   border: none;
   color: var(--color-orange-lighter);

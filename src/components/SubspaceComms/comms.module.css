@@ -1,0 +1,68 @@
+.inputWrapper {
+  position: relative;
+  margin: var(--space-md) 0;
+}
+
+.input {
+  background: var(--color-neutral-light);
+  border: none;
+  font-size: var(--text-xl);
+  color: var(--color-orange-lighter);
+  padding: var(--space-sm);
+  width: 448px;
+}
+
+.divider {
+  width: var(--space-md);
+  background: var(--color-neutral);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 176px;
+}
+
+.divider:nth-child(2) {
+  left: 240px;
+}
+
+.divider:nth-child(3) {
+  left: 310px;
+}
+
+.divider:nth-child(4) {
+  left: 376px;
+}
+
+.errorText {
+  margin: var(--space-md) 0;
+  color: var(--color-orange-dark);
+}
+
+.forgotButton {
+  margin-right: var(--space-md);
+}
+
+.continueLink {
+  display: block;
+  width: 200px;
+  margin-top: var(--space-md);
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.loading > span {
+  animation-duration: 900ms;
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}

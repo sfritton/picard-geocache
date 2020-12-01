@@ -3,6 +3,7 @@ import { PageProps } from 'gatsby';
 import Layout from '../../components/Layout';
 import DistressSignalEntry from '../../log-entries/01-distress-signal';
 import UniversalTranslator from '../../components/UniversalTranslator';
+import SubspaceComms from '../../components/SubspaceComms';
 
 const Home: React.FC<PageProps> = () => {
   return (
@@ -17,9 +18,7 @@ const Home: React.FC<PageProps> = () => {
         <Layout.ToolContainer tool="library">
           <h2>Personal Library</h2>Some stuff about Star Trek
         </Layout.ToolContainer>
-        <Layout.ToolContainer tool="comms">
-          <h2>Subspace Comms</h2>Some stuff about Star Trek
-        </Layout.ToolContainer>
+        <SubspaceComms />
       </Layout.Content>
     </Layout.Grid>
   );

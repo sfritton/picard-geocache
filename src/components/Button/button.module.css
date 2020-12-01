@@ -17,10 +17,10 @@
 }
 
 .button {
+  display: inline-block;
   text-decoration: none;
   min-width: 200px;
   text-align: right;
-  margin: var(--space-sm);
   background: var(--button-color);
   color: var(--color-neutral);
   border: none;
