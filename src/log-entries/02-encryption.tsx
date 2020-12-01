@@ -3,7 +3,7 @@ import LogEntry from '../components/LogEntry';
 
 const EncryptionEntry: React.FC = () => {
   return (
-    <LogEntry stardate="46257.4">
+    <LogEntry stardate="46257.8">
       Even after translating the signal from Klingon, a portion of it remains unintelligible.
       Lieutenant Worf suspects that it is an encrypted message, but is unfamiliar with the method of
       encryption. I now believe that our mystery vessel is a cloaked Klingon Bird-of-Prey. To avoid

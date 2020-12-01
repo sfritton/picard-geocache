@@ -9,7 +9,7 @@ import SubspaceComms from '../../components/SubspaceComms';
 const Home: React.FC<PageProps> = () => {
   return (
     <Layout.Grid>
-      <Layout.Header title="LCARS Access 411" stardate="46257.4" />
+      <Layout.Header title="USS Enterprise 1701-D" stardate="46257.4" />
       <Layout.Content>
         <Layout.ToolContainer tool="log">
           <h2>Captain's Log</h2>
