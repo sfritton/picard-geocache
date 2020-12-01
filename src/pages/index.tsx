@@ -1,8 +1,9 @@
 import React from 'react';
+import { PageProps } from 'gatsby';
 import Layout from '../components/Layout';
 import Button from '../components/Button';
 
-export default function Home() {
+const Home: React.FC<PageProps> = () => {
   return (
     <Layout.Grid>
       <Layout.Header title="LCARS Access 411" />
@@ -29,4 +30,6 @@ export default function Home() {
       </Layout.Content>
     </Layout.Grid>
   );
-}
+};
+
+export default Home;
