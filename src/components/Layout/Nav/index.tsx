@@ -4,12 +4,12 @@ import styles from './nav.module.css';
 
 const Nav: React.FC = () => {
   return (
-    <div className={styles.container}>
+    <nav className={styles.container}>
       <NavButton label="Captain's Log" value="log" />
       <NavButton label="Universal Translator" value="translator" />
       <NavButton label="Personal Library" value="library" />
       <NavButton label="Subspace Comms" value="comms" />
-    </div>
+    </nav>
   );
 };
 

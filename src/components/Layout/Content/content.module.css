@@ -11,6 +11,7 @@
   background: var(--color-neutral);
   border-top-left-radius: var(--space-xl);
   padding: var(--space-lg) var(--space-xl);
+  min-height: 500px;
 }
 
 .borderBlock {

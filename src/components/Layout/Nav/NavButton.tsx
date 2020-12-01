@@ -13,7 +13,7 @@ const NavButton: React.FC<Props> = ({ label, value }) => {
 
   return (
     <Button
-      color={value === currentTool ? 'orange-light' : 'orange'}
+      color={value === currentTool ? 'orange' : 'orange-light'}
       className={styles.navButton}
       onClick={() => setCurrentTool(value)}
     >

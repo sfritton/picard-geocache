@@ -6,27 +6,20 @@ import Button from '../components/Button';
 const Home: React.FC<PageProps> = () => {
   return (
     <Layout.Grid>
-      <Layout.Header title="LCARS Access 411" />
+      <Layout.Header title="LCARS Access 411" stardate="46257.3" />
       <Layout.Content>
-        <h2>Hello World</h2>Some stuff about Star Trek
-        <h3>More stuff</h3>Some stuff about Star Trek
-        <h4>Even more</h4>Some stuff about Star Trek
-        <div>
-          <Button>Orange Button</Button>
-          <Button isRound>Orange Button</Button>
-        </div>
-        <div>
-          <Button color="orange-light">Orange Light Button</Button>
-          <Button color="orange-light" isRound>
-            Orange Button
-          </Button>
-        </div>
-        <div>
-          <Button color="blue">Blue Button</Button>
-          <Button color="blue" isRound>
-            Orange Button
-          </Button>
-        </div>
+        <Layout.ToolContainer tool="log">
+          <h2>Captain's Log</h2>Some stuff about Star Trek
+        </Layout.ToolContainer>
+        <Layout.ToolContainer tool="translator">
+          <h2>Universal Translator</h2>Some stuff about Star Trek
+        </Layout.ToolContainer>
+        <Layout.ToolContainer tool="library">
+          <h2>Personal Library</h2>Some stuff about Star Trek
+        </Layout.ToolContainer>
+        <Layout.ToolContainer tool="comms">
+          <h2>Subspace Comms</h2>Some stuff about Star Trek
+        </Layout.ToolContainer>
       </Layout.Content>
     </Layout.Grid>
   );
