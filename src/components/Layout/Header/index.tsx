@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import styles from './header.module.css';
 
 interface Props {
@@ -8,6 +9,9 @@ interface Props {
 const Header: React.FC<Props> = ({ title }) => {
   return (
     <div className={styles.headerBorder}>
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       <div className={styles.header}>
         <h1>{title}</h1>
       </div>
