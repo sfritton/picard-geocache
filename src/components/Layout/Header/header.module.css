@@ -1,36 +1,56 @@
 .headerBorder {
   position: relative;
-  height: 200px;
+  height: 100px;
   text-align: right;
   background: var(--color-blue-primary);
-  border-bottom-left-radius: calc(var(--nav-width) / 2);
-  padding-left: var(--nav-width);
-  padding-bottom: var(--space-lg);
   grid-area: header;
+  padding-left: var(--space-sm);
+  padding-bottom: var(--space-lg);
+  border-bottom-left-radius: calc(var(--space-lg) * 1.5);
 }
 
+@media (min-width: 668px) {
+  .headerBorder {
+    height: 200px;
+    border-bottom-left-radius: calc(var(--nav-width) / 2);
+    padding-left: var(--nav-width);
+  }
+}
 .header {
   background: var(--color-neutral);
   height: 100%;
-  border-bottom-left-radius: var(--space-xl);
+  border-bottom-left-radius: var(--space-lg);
+}
+
+@media (min-width: 668px) {
+  .header {
+    border-bottom-left-radius: var(--space-xl);
+  }
 }
 
 .borderBlockLeft {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: var(--nav-width);
-  height: 100px;
-  background: var(--color-blue-light);
-  border-bottom-width: var(--space-md);
-  border-bottom-color: var(--color-neutral);
-  border-bottom-style: solid;
-  padding-top: var(--space-sm);
-  padding-right: var(--space-sm);
-  color: var(--color-neutral);
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: var(--text-lg);
+  display: none;
+}
+
+@media (min-width: 668px) {
+  .borderBlockLeft {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: var(--nav-width);
+    padding-top: var(--space-sm);
+    padding-right: var(--space-sm);
+    background: var(--color-blue-light);
+    color: var(--color-neutral);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: var(--text-lg);
+    border-bottom-width: var(--space-md);
+    border-bottom-color: var(--color-neutral);
+    border-bottom-style: solid;
+  }
 }
 
 .borderBlock {
@@ -55,13 +75,20 @@
 }
 
 .borderBlock3 {
-  width: 20%;
+  width: 15%;
   background: var(--color-blue-light);
   right: calc(30% + var(--space-xl));
 }
 
 .borderBlock4 {
-  width: var(--space-xl);
-  background: var(--color-orange-primary);
-  right: calc(50% + var(--space-xl));
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .borderBlock4 {
+    display: block;
+    width: var(--space-xl);
+    background: var(--color-orange-primary);
+    right: calc(45% + var(--space-xl));
+  }
 }

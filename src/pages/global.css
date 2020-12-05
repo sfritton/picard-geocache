@@ -50,8 +50,14 @@ h4 {
 }
 
 h1 {
-  font-size: var(--text-title);
+  font-size: var(--text-xl);
   color: var(--color-orange-primary);
+}
+
+@media (min-width: 668px) {
+  h1 {
+    font-size: var(--text-title);
+  }
 }
 
 h2 {

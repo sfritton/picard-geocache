@@ -1,17 +1,32 @@
 .contentBorder {
   position: relative;
   background: var(--color-orange-dark);
-  border-top-left-radius: calc(var(--nav-width) / 2);
-  padding-left: var(--nav-width);
-  padding-top: var(--space-lg);
   grid-area: content;
+
+  padding-left: var(--space-sm);
+  padding-top: var(--space-lg);
+  border-top-left-radius: calc(var(--space-lg) * 1.5);
+}
+
+@media (min-width: 668px) {
+  .contentBorder {
+    border-top-left-radius: calc(var(--nav-width) / 2);
+    padding-left: var(--nav-width);
+  }
 }
 
 .content {
   background: var(--color-neutral);
-  border-top-left-radius: var(--space-xl);
-  padding: var(--space-lg) var(--space-xl);
   min-height: calc(100vh - var(--space-md) * 5 - 200px);
+  padding: var(--space-lg);
+  border-top-left-radius: var(--space-lg);
+}
+
+@media (min-width: 668px) {
+  .content {
+    border-top-left-radius: var(--space-xl);
+    padding: var(--space-lg) var(--space-xl);
+  }
 }
 
 .borderBlock {
@@ -36,7 +51,7 @@
 }
 
 .borderBlock3 {
-  width: 20%;
+  width: 15%;
   background: var(--color-orange-lighter);
   border-bottom-width: var(--space-md);
   border-bottom-color: var(--color-neutral);
@@ -45,7 +60,14 @@
 }
 
 .borderBlock4 {
-  width: var(--space-xl);
-  background: var(--color-orange-lighter);
-  right: calc(50% + var(--space-xl));
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .borderBlock4 {
+    display: block;
+    width: var(--space-xl);
+    background: var(--color-orange-lighter);
+    right: calc(45% + var(--space-xl));
+  }
 }
