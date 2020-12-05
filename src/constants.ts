@@ -1,5 +1,6 @@
 export const DISTRESS_SIGNAL_KLINGON = "malja' bopab QaptaHvIS yInchugh je. yulqa' chemvaH vIsIqnISmoH!" as const;
 export const DISTRESS_SIGNAL_ENGLISH = 'Engines damaged. Life support failing. Request immediate assistance!' as const;
+export const DISTRESS_SIGNAL_ENCODED = '↓↑	↑↑	↑→	↓←	↑→	↓←	←←	↑↔	↑↕	↑→	→↑	↑←	→→	→↑	→→	↓←	→↓	←↔	→↕	↔←	←→	↑↕	←←	↓←	↓←	↓↔	←←	→↕	↓←	↑↑	↑→	→↓	↓↑	→↕	←↔	←←	↓↑	←←	←→	←→	→→	→↕	←↓	↑→	→↑	↑←	↑↕	↔←	→↑	↓→	→↔	→↑	←↔	↑↑	↕↑	↕↑	↕↓	↔↔' as const;
 
 export const ACCESS_CODE_HINT = [
   [87, 43], // g
@@ -31,3 +32,42 @@ export const ACCESS_CODE_HINT = [
 ] as const;
 
 export const ACCESS_CODE = 'gamma2853' as const;
+
+export const DECRYPTER_KEY = [
+  ['A', '←←'],
+  ['B', '←↑'],
+  ['C', '←→'],
+  ['D', '←↓'],
+  ['E', '←↔'],
+  ['F', '←↕'],
+  ['G', '↑←'],
+  ['H', '↑↑'],
+  ['I', '↑→'],
+  ['J', '↑↓'],
+  ['K', '↑↔'],
+  ['L', '↑↕'],
+  ['M', '→←'],
+  ['N', '→↑'],
+  ['O', '→→'],
+  ['P', '→↓'],
+  ['Q', '→↔'],
+  ['R', '→↕'],
+  ['S', '↓←'],
+  ['T', '↓↑'],
+  ['U', '↓→'],
+  ['V', '↓↓'],
+  ['W', '↓↔'],
+  ['X', '↓↕'],
+  ['Y', '↔←'],
+  ['Z', '↔↑'],
+  ['0', '↔→'],
+  ['1', '↔↓'],
+  ['2', '↔↔'],
+  ['3', '↔↕'],
+  ['4', '↕←'],
+  ['5', '↕↑'],
+  ['6', '↕→'],
+  ['7', '↕↓'],
+  ['8', '↕↔'],
+  ['9', '↕↕'],
+] as const;
