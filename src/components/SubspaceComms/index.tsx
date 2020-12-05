@@ -3,6 +3,7 @@ import { ACCESS_CODE, ACCESS_CODE_HINT } from '../../constants';
 import Button from '../Button';
 import Layout from '../Layout';
 import Link from '../Link';
+import PinInput from '../PinInput';
 import styles from './comms.module.css';
 
 const valueToDisplay = (value: string) => {
@@ -20,10 +21,8 @@ const SubspaceComms: React.FC = () => {
   const [isValid, setIsValid] = useState<boolean>();
 
   const handleChange = useCallback(
-    (event: React.ChangeEvent<HTMLInputElement>) => {
-      setValue(event.target.value.replace(/\s/g, ''));
-    },
-    [setValue, value],
+    (event: React.ChangeEvent<HTMLInputElement>) => setValue(event.target.value),
+    [setValue],
   );
 
   const handleSubmit = useCallback(() => {
@@ -49,13 +48,7 @@ const SubspaceComms: React.FC = () => {
         <>
           Use of the Subspace Communication System requires Alpha-Two Clearance. Enter your Personal
           Access Code:
-          <div className={styles.inputWrapper}>
-            <input className={styles.input} value={valueToDisplay(value)} onChange={handleChange} />
-            <div className={styles.divider}></div>
-            <div className={styles.divider}></div>
-            <div className={styles.divider}></div>
-            <div className={styles.divider}></div>
-          </div>
+          <PinInput value={value} onChange={handleChange} />
           {isValid === false && (
             <div className={styles.errorText}>Did not recognize access code. Try again</div>
           )}
@@ -66,7 +59,9 @@ const SubspaceComms: React.FC = () => {
           >
             Forgot your access code?
           </Button>
-          <Button onClick={handleSubmit}>Submit</Button>
+          <Button className={styles.submitButton} onClick={handleSubmit}>
+            Submit
+          </Button>
           {isHintVisible && (
             <div>
               <h3>Access Code Hint</h3>
