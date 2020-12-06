@@ -28,14 +28,7 @@
   background: var(--color-neutral-lighter);
 }
 
-.button {
-  margin: 0;
-}
-
-.languageHeading {
+.responseHeading {
   margin-top: 0;
-}
-
-.translationHeading {
-  margin-top: var(--space-sm);
+  margin-bottom: var(--space-sm);
 }

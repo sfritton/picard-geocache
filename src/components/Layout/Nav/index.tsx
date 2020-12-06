@@ -8,7 +8,8 @@ const Nav: React.FC = () => {
       <NavButton label="Captain's Log" value="log" />
       <NavButton label="Universal Translator" value="translator" />
       <NavButton label="Personal Library" value="library" />
-      <NavButton label="Subspace Comms" value="comms" />
+      <NavButton label="Subspace Comms" value="subspace" />
+      <NavButton label="Ship-to-Ship Comms" value="comms" />
     </nav>
   );
 };

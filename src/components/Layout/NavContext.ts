@@ -1,6 +1,6 @@
 import React from 'react';
 
-export type Tool = 'log' | 'translator' | 'library' | 'comms';
+export type Tool = 'log' | 'translator' | 'library' | 'subspace' | 'comms';
 
 interface NavContextInterface {
   currentTool: Tool;

@@ -7,6 +7,7 @@ import UniversalTranslator from '../../components/UniversalTranslator';
 import SubspaceComms from '../../components/SubspaceComms';
 import PersonalLibrary from '../../components/PersonalLibrary';
 import CouncilMeetingEntry from '../../log-entries/03-council-meeting';
+import ShipToShipComms from '../../components/ShipToShipComms';
 
 const CouncilMeeting: React.FC<PageProps> = () => {
   return (
@@ -22,6 +23,7 @@ const CouncilMeeting: React.FC<PageProps> = () => {
         <UniversalTranslator />
         <PersonalLibrary />
         <SubspaceComms />
+        <ShipToShipComms />
       </Layout.Content>
     </Layout.Grid>
   );

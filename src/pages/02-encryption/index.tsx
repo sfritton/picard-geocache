@@ -6,6 +6,7 @@ import UniversalTranslator from '../../components/UniversalTranslator';
 import EncryptionEntry from '../../log-entries/02-encryption';
 import SubspaceComms from '../../components/SubspaceComms';
 import PersonalLibrary from '../../components/PersonalLibrary';
+import ShipToShipComms from '../../components/ShipToShipComms';
 
 const Encryption: React.FC<PageProps> = () => {
   return (
@@ -20,6 +21,7 @@ const Encryption: React.FC<PageProps> = () => {
         <UniversalTranslator />
         <PersonalLibrary />
         <SubspaceComms />
+        <ShipToShipComms />
       </Layout.Content>
     </Layout.Grid>
   );

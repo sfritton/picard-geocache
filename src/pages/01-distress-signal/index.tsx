@@ -5,6 +5,7 @@ import DistressSignalEntry from '../../log-entries/01-distress-signal';
 import UniversalTranslator from '../../components/UniversalTranslator';
 import SubspaceComms from '../../components/SubspaceComms';
 import PersonalLibrary from '../../components/PersonalLibrary';
+import ShipToShipComms from '../../components/ShipToShipComms';
 
 const DistressSignal: React.FC<PageProps> = () => {
   return (
@@ -18,6 +19,7 @@ const DistressSignal: React.FC<PageProps> = () => {
         <UniversalTranslator />
         <PersonalLibrary />
         <SubspaceComms />
+        <ShipToShipComms />
       </Layout.Content>
     </Layout.Grid>
   );

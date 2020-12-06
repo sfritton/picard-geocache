@@ -22,6 +22,7 @@
   font-size: var(--text-lg);
   padding: var(--space-sm) var(--space-md);
   background: var(--color-neutral-light);
+  color: var(--color-orange-lighter);
 }
 
 .digit + .digit {

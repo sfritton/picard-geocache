@@ -71,3 +71,5 @@ export const DECRYPTER_KEY = [
   ['8', '↕↔'],
   ['9', '↕↕'],
 ] as const;
+
+export const DECLOAKING_CODE = 'nuqneh5572' as const;

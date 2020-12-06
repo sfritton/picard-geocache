@@ -30,7 +30,7 @@ const SubspaceComms: React.FC = () => {
   }, [setIsValid, value]);
 
   return (
-    <Layout.ToolContainer tool="comms">
+    <Layout.ToolContainer tool="subspace">
       <h2>Subspace Comms</h2>
       {isValid ? (
         <>
