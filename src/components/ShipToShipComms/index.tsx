@@ -7,13 +7,13 @@ import styles from './s2s.module.css';
 
 const ShipToShipComms: React.FC = () => {
   const [value, setValue] = useState('');
-  const [isUncloaked, setIsUncloaked] = useState(false);
+  const [isDecloaked, setIsDecloaked] = useState(false);
   const [hasSent, setHasSent] = useState(false);
 
   const handleSubmit = useCallback(() => {
     setHasSent(true);
-    setIsUncloaked(value.toLowerCase().replace(' ', '').includes(DECLOAKING_CODE));
-  }, [setHasSent, value, setIsUncloaked]);
+    setIsDecloaked(value.toLowerCase().replace(' ', '').includes(DECLOAKING_CODE));
+  }, [setHasSent, value, setIsDecloaked]);
 
   return (
     <Layout.ToolContainer tool="comms">
@@ -29,13 +29,13 @@ const ShipToShipComms: React.FC = () => {
         {hasSent && (
           <div>
             <h3 className={styles.responseHeading}>Response</h3>
-            {isUncloaked
+            {isDecloaked
               ? 'This is Osprey 053. Recognized code NUQNEH 5572. Decloaking and lowering shields. Board when ready.'
               : 'No ships responded.'}
           </div>
         )}
-        {isUncloaked && (
-          <Link color="blue" href="/04-uncloaked">
+        {isDecloaked && (
+          <Link color="blue" href="/04-decloaked">
             Continue
           </Link>
         )}

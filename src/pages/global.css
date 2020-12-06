@@ -10,6 +10,11 @@
   --color-blue-primary: #9999ff;
   --color-blue-light: #cc99cc;
 
+  --color-klingon-red-default: #ea280e;
+  --color-klingon-red-light: #eb5b10;
+  --color-klingon-red-dark: #351910;
+  --color-klingon-yellow: #e9a72e;
+
   --text-sm: 14px;
   --text-md: 16px;
   --text-lg: 20px;
@@ -18,6 +23,7 @@
 
   --font-text: Arial, sans-serif;
   --font-title: Oswald, Arial, sans-serif;
+  --font-klingon: 'Red Rose', Arial, sans-serif;
 
   --space-xs: 4px;
   --space-sm: calc(var(--space-xs) * 2);
@@ -29,6 +35,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@700&display=swap');
 
 body {
   background: var(--color-neutral);

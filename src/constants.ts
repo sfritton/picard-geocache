@@ -73,3 +73,5 @@ export const DECRYPTER_KEY = [
 ] as const;
 
 export const DECLOAKING_CODE = 'nuqneh5572' as const;
+
+export const DISARMING_CODE = 'yIqaSmoH' as const;
