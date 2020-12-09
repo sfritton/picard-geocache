@@ -1,12 +1,25 @@
 .container {
-  margin: var(--space-md);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: var(--space-md) auto;
+  border-color: var(--color-klingon-red-default);
+  border-width: 2px var(--space-sm);
+  border-style: solid;
+  width: 249px;
+}
+
+@media (min-width: 668px) {
+  .container {
+    width: 483px;
+    flex-direction: row;
+  }
+}
+
+.listBorder {
   color: var(--color-klingon-red-light);
   font-family: var(--font-klingon);
   font-size: var(--text-lg);
-  width: 237px;
-  border-color: var(--color-klingon-red-default);
-  border-width: 2px;
-  border-style: solid;
 }
 
 .letterRow {
