@@ -4,10 +4,12 @@ This is a small Gatsby site to share a Star Trek themed puzzle that eventually l
 
 Check out the [deployed site](https://sfritton.github.io/picard-geocache/).
 
+![Puzzle screenshot](screenshot.png)
+
 ## Develop
 
 ```sh
-npm run install
+npm install
 npm run develop
 ```
 
