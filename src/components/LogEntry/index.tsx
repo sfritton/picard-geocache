@@ -6,9 +6,10 @@ interface Props {
 }
 
 const LogEntry: React.FC<Props> = ({ children, stardate }) => {
+  const stardateNumber = Number(stardate);
   return (
     <section className={styles.section}>
-      <h3>Stardate {stardate}</h3>
+      <h3>{isNaN(stardateNumber) ? stardate : `Stardate ${stardate}`}</h3>
       {children}
     </section>
   );

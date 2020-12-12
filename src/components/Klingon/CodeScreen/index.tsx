@@ -1,5 +1,6 @@
 import React from 'react';
 import { DISARMING_CODE } from '../../../constants';
+import KlingonEnsigna from '../KlingoEnsigna';
 import styles from './codescreen.module.css';
 
 const letters = 'abcdefghijklmnopqrstuvwxyz'.toUpperCase().split('');
@@ -7,6 +8,7 @@ const letters = 'abcdefghijklmnopqrstuvwxyz'.toUpperCase().split('');
 const CodeScreen: React.FC = () => {
   return (
     <div className={styles.container}>
+      <KlingonEnsigna className={styles.ensigna} />
       <div className={styles.listBorder}>
         {letters.slice(0, 13).map((letter) => {
           const codeIndex =
@@ -38,6 +40,7 @@ const CodeScreen: React.FC = () => {
           );
         })}
       </div>
+      <KlingonEnsigna className={styles.ensigna} />
     </div>
   );
 };

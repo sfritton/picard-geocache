@@ -9,6 +9,33 @@
   width: 249px;
 }
 
+.ensigna {
+  display: none;
+  --width: calc(50vw - 50% - var(--space-lg));
+  position: absolute;
+  top: var(--space-lg);
+  bottom: var(--space-lg);
+  margin: auto 0;
+  padding: var(--space-lg);
+  fill: var(--color-klingon-red-dark);
+  width: var(--width);
+  max-width: 420px;
+}
+
+@media (min-width: 992px) {
+  .ensigna {
+    display: block;
+  }
+}
+
+.ensigna:first-of-type {
+  right: 100%;
+}
+
+.ensigna:last-of-type {
+  left: 100%;
+}
+
 @media (min-width: 668px) {
   .container {
     width: 483px;

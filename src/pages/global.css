@@ -23,7 +23,7 @@
 
   --font-text: Arial, sans-serif;
   --font-title: Oswald, Arial, sans-serif;
-  --font-klingon: 'Red Rose', Arial, sans-serif;
+  --font-klingon: 'Shojumaru', Arial, sans-serif;
 
   --space-xs: 4px;
   --space-sm: calc(var(--space-xs) * 2);
@@ -36,6 +36,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shojumaru&display=swap');
 
 body {
   background: var(--color-neutral);
