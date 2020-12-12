@@ -16,6 +16,7 @@ const Decloaked: React.FC<PageProps> = () => {
   return (
     <div>
       <Helmet>
+        <link rel="shortcut icon" type="image/svg" href="/picard-geocache/images/klingon.svg" />
         <title>Klingon Osprey 053</title>
       </Helmet>
       <h1 className={styles.pageTitle}>Klingon Osprey 053</h1>
