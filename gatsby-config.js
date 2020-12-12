@@ -8,4 +8,8 @@ module.exports = {
   /* Your site config here */
   plugins: [],
   pathPrefix: '/picard-geocache',
+  siteMetadata: {
+    title: 'Star Trek Geocache Puzzle',
+  },
+  plugins: ['gatsby-plugin-react-helmet'],
 };
