@@ -11,6 +11,7 @@ const Header: React.FC<Props> = ({ title, stardate }) => {
   return (
     <div className={styles.headerBorder}>
       <Helmet>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
         <title>{title}</title>
       </Helmet>
       <div className={styles.header}>
