@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { PageProps } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import CodeScreen from '../../components/Klingon/CodeScreen';
@@ -6,8 +6,13 @@ import Input from '../../components/Klingon/Input';
 import CaptainsLogInsert from '../../components/Klingon/CaptainsLogInsert';
 import DecloakedEntry from '../../log-entries/04-decloaked';
 import styles from './decloaked.module.css';
+import { DISARMING_CODE } from '../../constants';
+import KlingonButton from '../../components/Klingon/KlingonButton';
 
 const Decloaked: React.FC<PageProps> = () => {
+  const [password, setPassword] = useState('');
+  const isPasswordCorrect = DISARMING_CODE.toLowerCase() === password.toLowerCase();
+
   return (
     <div>
       <Helmet>
@@ -18,7 +23,12 @@ const Decloaked: React.FC<PageProps> = () => {
         <DecloakedEntry />
       </CaptainsLogInsert>
       <CodeScreen />
-      <Input />
+      <div className={styles.inputAndButton}>
+        <Input value={password} onChange={(e) => setPassword(e.target.value)} />
+        <KlingonButton disabled={!isPasswordCorrect} href="/05-first-contact">
+          Disarm
+        </KlingonButton>
+      </div>
     </div>
   );
 };

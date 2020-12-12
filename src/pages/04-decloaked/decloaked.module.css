@@ -7,3 +7,10 @@
   overflow: hidden;
   clip: rect(0px, 0px, 0px, 0px);
 }
+
+.inputAndButton {
+  margin: 0 auto var(--space-lg);
+  width: 100%;
+  max-width: 483px;
+  display: flex;
+}

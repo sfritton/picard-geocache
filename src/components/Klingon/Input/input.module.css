@@ -1,19 +1,18 @@
 .container {
-  position: relative;
   border: 2px solid var(--color-klingon-red-default);
   border-left-width: 8px;
   border-right-width: 8px;
-  width: 400px;
-  margin: 0 auto;
+  flex-grow: 1;
 }
 
 .input {
+  width: 100%;
+  display: block;
   background: var(--color-neutral);
   border: none;
   color: var(--color-klingon-red-light);
   padding: var(--space-sm);
-  font-size: var(--text-xl);
-  width: 100%;
+  font-size: var(--text-lg);
   font-family: var(--font-klingon);
   text-transform: uppercase;
   text-align: center;
