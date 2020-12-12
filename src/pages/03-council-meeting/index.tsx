@@ -16,9 +16,9 @@ const CouncilMeeting: React.FC<PageProps> = () => {
       <Layout.Content>
         <Layout.ToolContainer tool="log">
           <h2>Captain's Log</h2>
-          <DistressSignalEntry />
-          <EncryptionEntry />
           <CouncilMeetingEntry />
+          <EncryptionEntry />
+          <DistressSignalEntry />
         </Layout.ToolContainer>
         <UniversalTranslator />
         <PersonalLibrary />
