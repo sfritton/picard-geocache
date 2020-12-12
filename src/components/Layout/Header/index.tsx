@@ -11,7 +11,7 @@ const Header: React.FC<Props> = ({ title, stardate }) => {
   return (
     <div className={styles.headerBorder}>
       <Helmet>
-        <link rel="shortcut icon" type="image/svg" href="/images/starfleet.svg" />
+        <link rel="shortcut icon" type="image/svg" href="/picard-geocache/images/starfleet.svg" />
         <title>{title}</title>
       </Helmet>
       <div className={styles.header}>
