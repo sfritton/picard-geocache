@@ -10,8 +10,6 @@ const Home: React.FC<PageProps> = () => {
       <Layout.Header title="Star Trek Geocache Puzzle" stardate="46251.3" />
       <Layout.Content disableNav>
         <div className={styles.wrapper}>
-          <h2>This is still a work in progress</h2>
-          Check back soon
           <h2>The Puzzle</h2>
           Step into the world of Star Trek as Captain Jean-Luc Picard in command of the USS
           Enterprise. Help your crew decipher a mysterious distress signal that will eventually lead
