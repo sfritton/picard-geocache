@@ -6,17 +6,11 @@ Check out the [deployed site](https://sfritton.github.io/picard-geocache/).
 
 ![Puzzle screenshot](screenshot.png)
 
-## Develop
+## Running it locally
 
 ```sh
 npm install
 npm run develop
-```
-
-## Deploy
-
-```sh
-npm run deploy
 ```
 
 ## Dependencies
