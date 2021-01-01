@@ -76,4 +76,4 @@ export const DECLOAKING_CODE = 'nuqneh5572' as const;
 
 export const DISARMING_CODE = 'yIqaSmoH' as const;
 
-export const COORDINATES = '44.4.986N, 92.30.748W' as const;
+export const COORDINATES = 'N44 05.378 W092 30.833' as const;

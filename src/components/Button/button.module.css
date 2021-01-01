@@ -29,7 +29,6 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: var(--text-md);
-  cursor: pointer;
 }
 
 .button[data-is-round='true'] {
@@ -37,8 +36,9 @@
   padding-right: var(--space-lg);
 }
 
-.button:hover {
+.button:not([disabled]):hover {
   background: var(--button-hover-color);
+  cursor: pointer;
 }
 
 .button:active {

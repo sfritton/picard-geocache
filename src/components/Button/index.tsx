@@ -6,6 +6,7 @@ interface Props {
   isRound?: boolean;
   className?: string;
   onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+  disabled?: boolean;
 }
 
 const Button: React.FC<Props> = ({
@@ -14,6 +15,7 @@ const Button: React.FC<Props> = ({
   isRound = false,
   className = '',
   onClick,
+  disabled = false,
 }) => {
   return (
     <button
@@ -22,6 +24,7 @@ const Button: React.FC<Props> = ({
       className={`${styles.button} ${className}`}
       type="button"
       onClick={onClick}
+      disabled={disabled}
     >
       {children}
     </button>
