@@ -1,7 +1,8 @@
 import React from 'react';
-import { DISARMING_CODE } from '../../../constants';
 import KlingonEnsigna from '../KlingoEnsigna';
 import styles from './codescreen.module.css';
+
+export const DISARMING_CODE = 'yIqaSmoH' as const;
 
 const letters = 'abcdefghijklmnopqrstuvwxyz'.toUpperCase().split('');
 

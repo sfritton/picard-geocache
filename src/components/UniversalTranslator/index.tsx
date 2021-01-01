@@ -1,9 +1,11 @@
 import React, { useCallback, useRef, FormEvent, useState } from 'react';
-import { DISTRESS_SIGNAL_ENGLISH, DISTRESS_SIGNAL_KLINGON } from '../../constants';
+import { DISTRESS_SIGNAL_KLINGON } from '../../constants';
 import Button from '../Button';
 import Link from '../Link';
 import Layout from '../Layout';
 import styles from './translator.module.css';
+
+const DISTRESS_SIGNAL_ENGLISH = 'Engines damaged. Life support failing. Request immediate assistance!' as const;
 
 const UniversalTranslator: React.FC = () => {
   const [input, setInput] = useState('');

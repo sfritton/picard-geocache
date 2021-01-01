@@ -1,7 +1,8 @@
 import React from 'react';
 import LogEntry from '../components/LogEntry';
 import TextLink from '../components/TextLink';
-import { COORDINATES } from '../constants';
+
+const COORDINATES = 'N44 05.378 W092 30.833' as const;
 
 const FirstContactEntry: React.FC = () => {
   return (

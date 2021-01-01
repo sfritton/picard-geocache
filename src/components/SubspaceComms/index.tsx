@@ -1,19 +1,40 @@
 import React, { useCallback, useState } from 'react';
-import { ACCESS_CODE, ACCESS_CODE_HINT } from '../../constants';
 import Button from '../Button';
 import Layout from '../Layout';
 import Link from '../Link';
 import PinInput from '../PinInput';
 import styles from './comms.module.css';
 
-const valueToDisplay = (value: string) => {
-  const firstFive = value.slice(0, 5);
-  const remainingChars = value.slice(5).split('');
+const ACCESS_CODE_HINT = [
+  [87, 43], // g
+  [87, 54], // a
+  [92, 14], // m
+  [92, 26], // m
+  [93, 1], // a
 
-  if (remainingChars.length < 1) return firstFive;
+  [88, 3], // t
+  [95, 13], // w
+  [89, 9], // o
 
-  return [firstFive, '', ...remainingChars].join('\t');
-};
+  [95, 1], // e
+  [88, 1], // i
+  [87, 43], // g
+  [96, 4], // h
+  [100, 23], // t
+
+  [90, 3], // f
+  [94, 1], // i
+  [91, 23], // v
+  [103, 2], // e
+
+  [88, 3], // t
+  [96, 4], // h
+  [92, 5], // r
+  [103, 2], // e
+  [95, 1], // e
+] as const;
+
+const ACCESS_CODE = 'gamma2853' as const;
 
 const SubspaceComms: React.FC = () => {
   const [value, setValue] = useState('');

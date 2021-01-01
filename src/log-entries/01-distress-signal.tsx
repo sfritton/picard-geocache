@@ -1,6 +1,8 @@
 import React from 'react';
 import LogEntry from '../components/LogEntry';
-import { DISTRESS_SIGNAL_ENCODED, DISTRESS_SIGNAL_KLINGON } from '../constants';
+import { DISTRESS_SIGNAL_KLINGON } from '../constants';
+
+const DISTRESS_SIGNAL_ENCODED = '↓↑	↑↑	↑→	↓←	↑→	↓←	←←	↑↔	↑↕	↑→	→↑	↑←	→→	→↑	→→	↓←	→↓	→↕	←↔	↔←	←→	↑↕	←←	↓←	↓←	↓↔	←←	→↕	↓←	↑↑	↑→	→↓	↓↑	→↕	←↔	←←	↓↑	←←	←→	←→	→→	→↕	←↓	↑→	→↑	↑←	↑↕	↔←	→↑	↓→	→↔	→↑	←↔	↑↑	↕↑	↕↑	↕↓	↔↔' as const;
 
 const DistressSignalEntry: React.FC = () => {
   return (

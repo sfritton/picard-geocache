@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { PageProps } from 'gatsby';
 import { Helmet } from 'react-helmet';
-import CodeScreen from '../../components/Klingon/CodeScreen';
+import CodeScreen, { DISARMING_CODE } from '../../components/Klingon/CodeScreen';
 import Input from '../../components/Klingon/Input';
 import CaptainsLogInsert from '../../components/Klingon/CaptainsLogInsert';
 import DecloakedEntry from '../../log-entries/04-decloaked';
 import styles from './decloaked.module.css';
-import { DISARMING_CODE } from '../../constants';
 import KlingonButton from '../../components/Klingon/KlingonButton';
 
 const Decloaked: React.FC<PageProps> = () => {

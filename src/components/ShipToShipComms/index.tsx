@@ -1,9 +1,10 @@
 import React, { useCallback, useState } from 'react';
-import { DECLOAKING_CODE } from '../../constants';
 import Button from '../Button';
 import Link from '../Link';
 import Layout from '../Layout';
 import styles from './s2s.module.css';
+
+const DECLOAKING_CODE = 'nuqneh5572' as const;
 
 const ShipToShipComms: React.FC = () => {
   const [value, setValue] = useState('');
