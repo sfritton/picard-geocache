@@ -1,4 +1,5 @@
 .contentBorder {
+  view-transition-name: star-trek-puzzle;
   position: relative;
   background: var(--color-orange-dark);
   grid-area: content;
